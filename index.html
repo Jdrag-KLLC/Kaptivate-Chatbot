@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple RAG Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask Me Anything!</h1>
+        <p>Or try one of these common questions:</p>
+        <div class="basic-questions">
+            <button class="basic-q-btn" data-question="What is GitHub Pages?">What is GitHub Pages?</button>
+            <button class="basic-q-btn" data-question="How do I hide API keys?">How do I hide API keys?</button>
+            <button class="basic-q-btn" data-question="What is a RAG system?">What is a RAG system?</button>
+            <button class="basic-q-btn" data-question="Tell me about embeddings.">Tell me about embeddings.</button>
+        </div>
+
+        <div class="qa-section">
+            <textarea id="userQuestion" placeholder="Type your question here..."></textarea>
+            <button id="askButton">Ask</button>
+        </div>
+
+        <div id="loadingIndicator" style="display:none;">
+            <p>Thinking...</p>
+        </div>
+
+        <div id="answerArea">
+            <h2>Answer:</h2>
+            <p id="answerText">Your answer will appear here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
