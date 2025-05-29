@@ -5,7 +5,7 @@ const basicQuestionButtons = document.querySelectorAll('.basic-q-btn');
 const loadingIndicator = document.getElementById('loadingIndicator');
 
 // IMPORTANT: Replace with your DEPLOYED backend API endpoint URL
-const BACKEND_API_URL = 'https://andrestest-307401118000.europe-west1.run.app'; // Or your Netlify, AWS, etc. URL
+const BACKEND_API_URL = 'https://form-embed-app-307401118000.us-central1.run.app'; // Or your Netlify, AWS, etc. URL
 
 async function getAnswer(question) {
     if (!question.trim()) {
